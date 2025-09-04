@@ -1,0 +1,29 @@
+{
+  "name": "prise",
+  "version": "1.0.0",
+  "description": "O **PRISE Fórum** é uma plataforma online de discussão inspirada no Reddit, voltada para criação, compartilhamento e debate de conteúdos em comunidades temáticas. O objetivo é promover uma comunidade engajada e organizada, oferecendo ferramentas de interação, moderação e personalização para os usuários.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon /server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateussombrio/prise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/mateussombrio/prise/issues"
+  },
+  "homepage": "https://github.com/mateussombrio/prise#readme",
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.3",
+    "nodemon": "^3.1.10",
+    "sequelize": "^6.37.7"
+  }
+}

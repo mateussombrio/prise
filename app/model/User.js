@@ -1,5 +1,5 @@
 import { DataTypes } from "sequelize";
-import db from "../db/conn";
+import db from "../../db/conn";
 
 const User = db.define("User", {
   primeiro_nome: {
@@ -27,3 +27,5 @@ const User = db.define("User", {
     allowNull: false,
   },
 });
+
+module.exports = User
