@@ -1,7 +1,7 @@
 import { DataTypes } from "sequelize";
 import db from "../../db/conn";
 
-const Post = db.define("Post", {
+const Comentarios = db.define("Comentarios", {
   texto: {
     type: DataTypes.STRING,
     allowNull: false,
@@ -12,7 +12,7 @@ const Post = db.define("Post", {
   },
   video: {
     type: DataTypes.BLOB,
-    allowNull: true,
+    allowNull: false,
   },
   data_criacao: {
     type: DataTypes.DATE,
@@ -24,4 +24,4 @@ const Post = db.define("Post", {
   },
 });
 
-module.exports = Post;
+module.exports = Comentarios;
