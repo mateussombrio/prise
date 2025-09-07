@@ -1,7 +1,7 @@
 import { DataTypes } from "sequelize";
 import db from "../../db/conn";
 
-const Comentarios = db.define("Comentarios", {
+const Comentario = db.define("Comentarios", {
   texto: {
     type: DataTypes.TEXT,
     allowNull: false,
@@ -24,4 +24,4 @@ const Comentarios = db.define("Comentarios", {
   },
 });
 
-module.exports = Comentarios;
+module.exports = Comentario;

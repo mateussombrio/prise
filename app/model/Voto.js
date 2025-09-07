@@ -11,3 +11,5 @@ const Voto = db.define("Voto", {
     allownull: false,
   },
 });
+
+module.exports = Voto;
