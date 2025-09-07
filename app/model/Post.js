@@ -2,8 +2,12 @@ import { DataTypes } from "sequelize";
 import db from "../../db/conn";
 
 const Post = db.define("Post", {
-  texto: {
+  titulo: {
     type: DataTypes.STRING,
+    allowNull: false
+  },
+  texto: {
+    type: DataTypes.TEXT,
     allowNull: false,
   },
   image: {

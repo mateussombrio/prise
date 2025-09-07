@@ -3,7 +3,7 @@ import db from "../../db/conn";
 
 const Comentarios = db.define("Comentarios", {
   texto: {
-    type: DataTypes.STRING,
+    type: DataTypes.TEXT,
     allowNull: false,
   },
   image: {
@@ -12,7 +12,7 @@ const Comentarios = db.define("Comentarios", {
   },
   video: {
     type: DataTypes.BLOB,
-    allowNull: false,
+    allowNull: true,
   },
   data_criacao: {
     type: DataTypes.DATE,

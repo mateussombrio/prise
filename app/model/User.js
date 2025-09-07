@@ -2,11 +2,7 @@ import { DataTypes } from "sequelize";
 import db from "../../db/conn";
 
 const User = db.define("User", {
-  primeiro_nome: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
-  ultimo_nome: {
+  nome_completo: {
     type: DataTypes.STRING,
     allowNull: false,
   },
@@ -17,15 +13,20 @@ const User = db.define("User", {
   nickname: {
     type: DataTypes.STRING,
     allowNull: false,
+    unique: true,
   },
   email: {
     type: DataTypes.STRING,
     allowNull: false,
+    unique: true,
   },
   senha: {
     type: DataTypes.STRING,
     allowNull: false,
   },
+  data_criacao: {
+    type: DataTypes.DATE
+  }
 });
 
-module.exports = User
+module.exports = User;
